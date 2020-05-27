@@ -7,6 +7,14 @@ import useCachedResources from './hooks/useCachedResources';
 import BottomTabNavigator from './navigation/BottomTabNavigator';
 import LinkingConfiguration from './navigation/LinkingConfiguration';
 
+// Screens
+import LoginScreen from './screens/LoginScreen';
+import ProfileScreen from './screens/ProfileScreen';
+import LinksScreen from './screens/LinksScreen';
+import CreateRun from './screens/CreateRun';
+import HomeScreen from './screens/HomeScreen';
+
+
 const Stack = createStackNavigator();
 
 export default function App(props) {

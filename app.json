@@ -23,7 +23,13 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier":"com.webiosandroid.all",
+      "config":{
+        "googleSignIn":{
+          "reservedClientId":"com.googleusercontent.apps.80217870137-slh2oe6cusct0spch25e6qi1856nnkko"
+        }
+      }
     },
     "web": {
       "favicon": "./assets/images/favicon.png"
