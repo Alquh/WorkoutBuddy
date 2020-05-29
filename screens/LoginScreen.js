@@ -1,43 +1,51 @@
-import React, { Component } from "react"
-import { View, Text, StyleSheet, Button } from "react-native"
-import { androidClientId, iosClientId } from '../superSecretKey'
+import React, { Component } from "react";
+import { View, Text, StyleSheet, Button } from "react-native";
+// I like to put all of my authentication classes into own folder :)
+import googleAuthentication from "../authentication/google";
 
 class LoginScreen extends Component {
+	constructor(props) {
+		super(props);
 
-  signInWithGoogleAsync = async () => {
-    try {
-      const result = await Google.logInAsync({
-        behavior:'web',
-        androidClientId: androidClientId,
-        iosClientId: iosClientId,
-        scopes: ['profile', 'email'],
-      });
-  
-      if (result.type === 'success') {
-        return result.accessToken;
-      } else {
-        return { cancelled: true };
-      }
-    } catch (e) {
-      return { error: true };
-    }
-  }
+		this.state = {
+			authenticated: false,
+			accessToken: null,
+		};
+	}
 
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>LoginScreen</Text>
-        <Button title='Sign in with Google' onPress={() => this.signInWithGoogleAsync()}/>
-      </View>
-    );
-  }
+	signInWithGoogleAsync = async () => {
+		const response = await googleAuthentication();
+
+		if (response.success) {
+			this.setState({ authenticated: true, accessToken: response.result });
+		} else if (response.result === "error") {
+			alert("Oops. Something went wrong.");
+		}
+	};
+
+	render() {
+		return (
+			<View style={styles.container}>
+				<Text>LoginScreen</Text>
+
+				{this.state.authenticated ? (
+					<Text>You've signed in with Google.</Text>
+				) : (
+					<Button
+						title="Sign in with Google"
+						onPress={() => this.signInWithGoogleAsync()}
+					/>
+				)}
+			</View>
+		);
+	}
 }
 export default LoginScreen;
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center'
-  }
+	container: {
+		flex: 1,
+		alignItems: "center",
+		justifyContent: "center",
+	},
 });
