@@ -1,0 +1,2 @@
+export const androidClientId="80217870137-jscj5f6bibqam5drnf2f2o7i0s6o5b2m.apps.googleusercontent.com";
+export const iosClientId="80217870137-2r171hi3bp8kkh88tdem5a1efjnaebb3.apps.googleusercontent.com";
