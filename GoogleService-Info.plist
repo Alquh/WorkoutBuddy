@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>80217870137-2r171hi3bp8kkh88tdem5a1efjnaebb3.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.80217870137-2r171hi3bp8kkh88tdem5a1efjnaebb3</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>80217870137-jscj5f6bibqam5drnf2f2o7i0s6o5b2m.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAMdYCs9KgIalbceda27a5ruym19CDCyec</string>
+	<key>GCM_SENDER_ID</key>
+	<string>80217870137</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>host.exp.exponent</string>
+	<key>PROJECT_ID</key>
+	<string>workoutbuddy-278518</string>
+	<key>STORAGE_BUCKET</key>
+	<string>workoutbuddy-278518.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:80217870137:ios:72f22bb7d0c126f835a2e8</string>
+	<key>DATABASE_URL</key>
+	<string>https://workoutbuddy-278518.firebaseio.com</string>
+</dict>
+</plist>
