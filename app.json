@@ -29,12 +29,7 @@
         "googleSignIn":{
           "reservedClientId":"com.googleusercontent.apps.80217870137-slh2oe6cusct0spch25e6qi1856nnkko"
         }
-      },
-      "googleServicesFile": "./GoogleService-Info.plist"
-    },
-    "android": {
-      "package": "host.exp.exponent",
-      "googleServicesFile": "./google-services.json"
+      }
     },
     "web": {
       "favicon": "./assets/images/favicon.png"
